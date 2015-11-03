@@ -195,8 +195,8 @@
 <body>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
         <tr>
-            <td align="center">
-                <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
+            <td align="center" valign="top" class="body-cell">
+                <table width="544" border="0" cellpadding="0" cellspacing="0" class="box">
                     <tr>
                         <td class="email-masthead">
                             <a class="email-masthead_name">{{ $app_name}} </a>
@@ -207,27 +207,16 @@
                             <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
                                 <!-- Body content -->
                                 <tr>
-                                    <td class="content-cell">
-                                        @yield('content')
+                                    <td class="header-logo">
+                                       <a href="{{ $appUrl }}"><img src="https://www.clouda.ca/wp-content/uploads/2015/08/cloudlayers.png"></a>
                                     </td>
                                 </tr>
                             </table>
-                        </td>
+                       </td>
                     </tr>
                     <tr>
-                        <td>
-                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
-                                <tr>
-                                    <td class="content-cell">
-                                        @if($show_support)
-                                        <p class="sub center">{!! trans('cachet.powered_by') !!}</p>
-                                        @endif
-                                        <p class="sub center">
-                                            <a href="https://cachethq.io"><img src="{{ asset('img/button-email--dark-grey.png') }}" alt="Cachet"></a>
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
+                        <td class="body">
+                            @yield('content')
                         </td>
                     </tr>
                 </table>
