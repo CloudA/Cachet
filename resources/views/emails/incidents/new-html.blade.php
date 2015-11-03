@@ -5,19 +5,18 @@
 @stop
 
 @section('content')
-    {!! trans('cachet.subscriber.email.incident.html-preheader', ['app_name' => Setting::get('app_name')]) !!}
+	<h2>
+		{!! trans('cachet.subscriber.email.incident.html-preheader', ['app_name' => Setting::get('app_name')]) !!}
+	</h2>
 
-    <p>
+    <h3>
         {!! $status !!}
-    </p>
+    </h3>
 
     <p>
         {!! $htmlContent !!}
     </p>
 
-    @if(Setting::get('show_support'))
-    <p>{!! trans('cachet.powered_by', ['app' => Setting::get('app_name')]) !!}</p>
-    @endif
     <p>
         <small><a href="{{ $unsubscribeLink }}">{!! trans('cachet.subscriber.email.unsubscribe') !!}</a></small>
     </p>

@@ -13,26 +13,21 @@
         <tr>
             <td align="center" valign="top" class="body-cell">
                 <table width="544" border="0" cellpadding="0" cellspacing="0" class="box">
-                    @if($bannerImage = Setting::get('app_banner'))
                     <tr>
                         <td class="header">
                             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td class="header-logo">
-                                       <a href="{{ $appUrl }}"><img src="data:{{ Setting::get('app_banner_type') }};base64, {{ $bannerImage}}"></a>
+                                       <a href="{{ $appUrl }}"><img src="https://www.clouda.ca/wp-content/uploads/2015/08/cloudlayers.png"></a>
                                     </td>
                                 </tr>
                             </table>
                        </td>
                     </tr>
-                    @endif
                     <tr>
                         <td class="body">
                             @yield('content')
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="footer">{{ Setting::get('app_name') }}</td>
                     </tr>
                 </table>
             </td>
