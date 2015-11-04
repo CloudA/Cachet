@@ -1,20 +1,15 @@
 @extends('layout.emails')
 
 @section('content')
-{!! trans('cachet.subscriber.email.verify.html', ['app_name' => $app_name]) !!}
+    <div style="text-align: center; border-bottom: 1px solid black; height: 100%;">
+        <h2>
+            <a href="http://status.clouda.ca/" style="color: #2a92e5;text-decoration: none;hover: initial;">{!! trans('cachet.subscriber.email.incident.html-preheader', ['app_name' => Setting::get('app_name')]) !!}</a>
+        </h2>
+    </div>
 
-<table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-        <td align="center">
-            <div>
-                <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ $link }}" style="height:45px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fill="t">
-                <v:fill type="tile" color="#22BC66" />
-                <w:anchorlock/>
-                <center style="color:#ffffff;font-family:sans-serif;font-size:15px;">{{ trans('cachet.subscriber.email.verify.button') }}</center>
-                </v:roundrect><![endif]-->
-                <a href="{{ $link }}" class="button button--green">{{ trans('cachet.subscriber.email.verify.button') }}</a>
-            </div>
-        </td>
-    </tr>
-</table>
+    <h3>
+        Status Subscription
+    </h3>
+
+    {!! trans('cachet.subscriber.email.verify.html', ['app_name' => Setting::get('app_name'), 'link' => $link]) !!}
 @stop

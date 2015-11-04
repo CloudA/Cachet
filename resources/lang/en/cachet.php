@@ -81,9 +81,9 @@ return [
             'failure'            => 'Something went wrong with the subscription.',
             'already-subscribed' => 'Cannot subscribe :email because they\'re already subscribed.',
             'verify'             => [
-                'text'   => "Please confirm your email subscription to :app_name status updates.\n:link",
-                'html'   => '<p>Please confirm your email subscription to :app_name status updates.</p>',
-                'button' => 'Confirm Subscription',
+                'text'           => "Please confirm your email subscription to :app_name updates.\n:link",
+                'html-preheader' => 'Please confirm your email subscription to :app_name updates.',
+                'html'           => '<p>Please confirm your email subscription to :app_name updates.</p><p><a href=":link">:link</a></p>',
             ],
             'maintenance' => [
                 'subject' => '[Maintenance Scheduled] :name',
