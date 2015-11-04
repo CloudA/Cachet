@@ -11,6 +11,10 @@
         </h2>
     </div>
 
+    <h3>
+        {!! $status !!}
+    </h3>
+
     <p>
         {!! $htmlContent !!}
     </p>
