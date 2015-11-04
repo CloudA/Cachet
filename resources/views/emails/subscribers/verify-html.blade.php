@@ -5,9 +5,15 @@
 @stop
 
 @section('content')
-    {!! trans('cachet.subscriber.email.verify.html', ['app_name' => Setting::get('app_name'), 'link' => $link]) !!}
+    <div style="text-align: center; border-bottom: 1px solid black; height: 100%;">
+        <h2>
+            <a href="http://status.clouda.ca/" style="color: #2a92e5;text-decoration: none;hover: initial;">{!! trans('cachet.subscriber.email.incident.html-preheader', ['app_name' => Setting::get('app_name')]) !!}</a>
+        </h2>
+    </div>
 
-    @if(Setting::get('show_support'))
-    <p>{!! trans('cachet.powered_by', ['app' => Setting::get('app_name')]) !!}</p>
-    @endif
+    <h3>
+        Status Subscription
+    </h3>
+
+    {!! trans('cachet.subscriber.email.verify.html', ['app_name' => Setting::get('app_name'), 'link' => $link]) !!}
 @stop
