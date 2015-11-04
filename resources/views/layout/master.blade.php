@@ -71,9 +71,9 @@
     <div class="global-header"><img src="/img/ca-logo-sq-sm.png"><ul class="nav nav-tabs">
           <li><a href="https://www.clouda.ca/">Cloud-A Home</a></li>
           <li><a href="http://docs.clouda.ca/">Docs / KB</a></li>
-          <li class="active"><a href="#">API Reference</a></li>
+          <li><a href="http://docs.clouda.ca/api/">API Reference</a></li>
           <li><a href="http://client.clouda.ca/">Client Portal</a></li>
-          <li><a href="http://status.clouda.ca/">System Status</a></li>
+          <li class="active"><a href="#">System Status</a></li>
        </ul>
     </div>
     <div class="container">
