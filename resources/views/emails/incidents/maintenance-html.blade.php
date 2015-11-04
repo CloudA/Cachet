@@ -5,19 +5,19 @@
 @stop
 
 @section('content')
-    {!! trans('cachet.subscriber.email.maintenance.html', ['app_name' => Setting::get('app_name')]) !!}
+    <div style="text-align: center; border-bottom: 1px solid black; height: 100%;">
+        <h2>
+            <a href="http://status.clouda.ca/" style="color: #2a92e5;text-decoration: none;hover: initial;">{!! trans('cachet.subscriber.email.maintenance.html', ['app_name' => Setting::get('app_name')]) !!}</a>
+        </h2>
+    </div>
 
-    <p>
+    <h3>
         {!! $status !!}
-    </p>
+    </h3>
 
     <p>
         {!! $htmlContent !!}
     </p>
-
-    @if(Setting::get('show_support'))
-    <p>{!! trans('cachet.powered_by', ['app' => Setting::get('app_name')]) !!}</p>
-    @endif
     <p>
         <small><a href="{{ $unsubscribeLink }}">{!! trans('cachet.subscriber.email.unsubscribe') !!}</a></small>
     </p>
