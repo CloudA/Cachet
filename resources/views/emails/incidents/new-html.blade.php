@@ -3,17 +3,11 @@
 @section('content')
 <h1 class="align-center">{!! $name !!}</h1>
 
-<table class="border-rounded" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-        <td>
-            <p class="compressed">
-                <strong>{!! $status !!} @if($has_component) ({{ $component_name }}) @endif</strong>
-                {!! $html_content !!}
-                {!! $timestamp !!}
-            </p>
-        </td>
-    <tr>
-</table>
+    <div style="text-align: center; border-bottom: 1px solid black; height: 100%;">
+        <h2>
+            <a href="http://status.clouda.ca/" style="color: #2a92e5;text-decoration: none;hover: initial;">New incident has been reported on Cloud-A Status Page</a>
+        </h2>
+    </div>
 
 <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
     <tr>
