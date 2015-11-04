@@ -76,12 +76,12 @@ return [
             ],
             'maintenance' => [
                 'text'           => "New maintenance has been scheduled on :app_name.\nThank you, :app_name",
-                'html-preheader' => 'New maintenance has been scheduled on :app_name.',
+                'html-preheader' => 'New maintenance has been scheduled on :app_name',
                 'html'           => '<p>New maintenance has been scheduled on :app_name.</p>',
             ],
             'incident' => [
                 'text'           => "New incident has been reported on :app_name.\nThank you, :app_name",
-                'html-preheader' => 'New incident has been reported on :app_name.',
+                'html-preheader' => 'New incident has been reported on :app_name',
                 'html'           => '<p>New incident has been reported on :app_name.</p><p>Thank you, :app_name</p>',
             ],
         ],

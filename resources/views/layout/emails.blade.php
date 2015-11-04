@@ -18,7 +18,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td class="header-logo">
-                                       <a href="{{ $appUrl }}"><img src="https://www.clouda.ca/wp-content/uploads/2015/08/cloudlayers.png"></a>
+                                       <a href="https://www.clouda.ca/"><img src="https://www.clouda.ca/wp-content/uploads/2015/11/Cloud-A-new-600x118.jpg"></a>
                                     </td>
                                 </tr>
                             </table>
